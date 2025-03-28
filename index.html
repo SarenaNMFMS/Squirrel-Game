@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog vs Squirrel Chase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <div id="scorePanel">
+        Nuts Collected: <span id="nutCount">0</span><br>
+        Squirrel Speed: <span id="speedDisplay">3</span>
+    </div>
+    <div id="controls">
+        Use Arrow Keys to move the squirrel
+    </div>
+    <div id="gameOver">
+        <h2>Game Over!</h2>
+        <p>The dog caught the squirrel!</p>
+        <p>Final Score: <span id="finalScore">0</span></p>
+        <button onclick="resetGame()">Play Again</button>
+    </div>
+    <div id="debug">
+        Debug: <span id="imageStatus">Loading images...</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
